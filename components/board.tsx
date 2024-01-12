@@ -145,7 +145,7 @@ const Board = () => {
                     </div>
 
                     <div className={`w-full h-full p-4 ${clicked3 === true ? 'block' : 'hidden'}`}>
-                        <h2 className='font-bold text-center sm:text-3xl text-2xl'>Pending</h2>
+                        <h2 className='font-bold text-center sm:text-3xl text-2xl'>All  Tasks</h2>
                         <hr className='border-0 h-[2px] bg-one mt-5 mb-3' />
                         {loading ? (
                             <p>Loading...</p>
