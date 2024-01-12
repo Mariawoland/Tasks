@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.editScroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.editScroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+}
+
+.editScroll::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
