@@ -1,6 +1,7 @@
 import { getTheme, setTheme } from "@/utils/theme";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import Cookies from 'js-cookie';
 
 const Start = () => {
 
@@ -12,7 +13,7 @@ const Start = () => {
     }, []);
 
     const handleSubmit = () => {
-        localStorage.setItem("loggedIn", "true");
+        Cookies.set("loggedIn", "true");
         window.location.reload();
     };
 

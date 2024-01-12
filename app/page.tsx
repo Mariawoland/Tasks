@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { IoSunnyOutline } from "react-icons/io5";
 import { GoMoon } from "react-icons/go";
 import Board from '@/components/board';
+import Cookies from 'js-cookie';
 
 const Home = () => {
 
@@ -24,7 +25,7 @@ const Home = () => {
 
   const loggedin = useRef<HTMLInputElement>(null);
 
-  const getLoggedIn = localStorage.getItem("loggedIn");
+  const getLoggedIn = Cookies.get("loggedIn");
 
   return (
     <>
